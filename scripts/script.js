@@ -10,9 +10,14 @@ fetch (`${webPageURL}data.json`)
     .then(rawData => rawData.text())
     .then(transformedData => {
         const parsedData = JSON.parse(transformedData);
+        const parsedDataLength = parsedData.length;
         const summaryContent = document.getElementById("summaryContent");
+        const resultCircle = document.getElementById("resultCircle");
+        let scoreSum = 0;
 
         for (const [i, result] of parsedData.entries()) {
+            scoreSum += result.score;
+
             const summaryDetail = document.createElement("div");
             const summaryLogo = document.createElement("img");
             const summaryDescription = document.createElement("p");
@@ -35,4 +40,13 @@ fetch (`${webPageURL}data.json`)
             summaryDetail.appendChild(summaryRatio);
             summaryContent.appendChild(summaryDetail);
         }
+        
+        const resultCircleAntecedent = document.createElement("p");
+        
+        resultCircleAntecedent.classList.add("result__circle__antecedent");
+        resultCircleAntecedent.innerText = Math.floor(scoreSum / parsedDataLength);
+
+        const resultCircleFirstChild = resultCircle.firstChild;
+
+        resultCircle.insertBefore(resultCircleAntecedent, resultCircleFirstChild);
     });
