@@ -1,4 +1,6 @@
-fetch ("../data.json")
+import { webPageURL } from "./global_variables.js";
+
+fetch (`${webPageURL}data.json`)
     .then(rawData => rawData.text())
     .then(transformedData => {
         const parsedData = JSON.parse(transformedData);
