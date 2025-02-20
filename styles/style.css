@@ -67,7 +67,6 @@ main {
     min-width: 23.4375rem;
     width: 100%;
     max-width: 45.9375rem;
-    border-radius: 28px;
 }
 
 .result {
@@ -128,7 +127,7 @@ main {
     display: flex;
     align-items: center;
     padding: 1.125rem 1rem;
-    border-radius: 6px;
+    border-radius: 7px;
 }
 
 .summary__details--1 {
@@ -180,4 +179,57 @@ main {
     padding: 1rem 1rem 0.875rem;
     border: none;
     border-radius: 32px;
+}
+
+@media screen and (min-width: 40em) {
+    :root {
+        --fs-1: 4.5rem;
+        --fs-2: 2rem;
+        --fs-3: 1.5rem;
+        --fs-5: 1.125rem;
+    }
+
+    .result-summary-container {
+        grid-template-columns: repeat(2, 1fr);
+        border-radius: 28px;
+    }
+
+    .result {
+        padding: 2.375rem 3.75rem 3.4375rem;
+        border-radius: 28px;
+    }
+
+    .h-1 {
+        margin-bottom: 2.1875rem;
+    }
+    
+    .result__circle {
+        width: 12.5rem;
+        height: 12.5rem;
+        margin-bottom: 1.75rem;
+    }
+
+    .result__status {
+        margin-bottom: 0.875rem;
+    }
+
+    .summary {
+        padding: 2.375rem 2.5rem 2.875rem;
+    }
+
+    .h-2 {
+        margin-bottom: 1.75rem;
+    }
+
+    .summary__details {
+        padding: 1.0625rem 1rem 1rem;
+    }
+    
+    .summary__details--3 {
+        margin-top: 1rem;
+    }
+
+    .summary__button {
+        margin-top: 2.5625rem;
+    }
 }
