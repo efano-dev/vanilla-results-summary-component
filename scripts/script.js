@@ -1,5 +1,11 @@
 import { webPageURL } from "./global_variables.js";
 
+const anchorTags = document.getElementsByTagName("a");
+
+[...anchorTags].forEach((anchorTag) => {
+    anchorTag.href = webPageURL;
+})
+
 fetch (`${webPageURL}data.json`)
     .then(rawData => rawData.text())
     .then(transformedData => {

@@ -167,18 +167,16 @@ main {
 }
 
 .summary__button {
-    font: inherit;
+    text-decoration: none;
+    color: var(--color-white);
+    text-align: center;
     font-size: var(--fs-4);
     font-weight: var(--fw-bold);
-    cursor: pointer;
-    color: var(--color-white);
     display: block;
     width: 100%;
     background-color: var(--color-dark-gray-blue);
-    margin-inline: auto;
     margin-top: 1.4375rem;
     padding: 1rem 1rem 0.875rem;
-    border: none;
     border-radius: 32px;
 }
 
