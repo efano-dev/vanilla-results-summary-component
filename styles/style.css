@@ -130,24 +130,24 @@ main {
     border-radius: 7px;
 }
 
-.summary__details--1 {
+.summary__details--0 {
     color: var(--color-light-red);
     background-color: var(--color-fade-light-red);
 }
 
-.summary__details--2 {
+.summary__details--1 {
     color: var(--color-orage-yellow);
     background-color: var(--color-fade-orage-yellow);
     margin-top: 1rem;
 }
 
-.summary__details--3 {
+.summary__details--2 {
     color: var(--color-green-teal);
     background-color: var(--color-fade-green-teal);
     margin-top: 0.875rem;
 }
 
-.summary__details--4 {
+.summary__details--3 {
     color: var(--color-cobalt-blue);
     background-color: var(--color-fade-cobalt-blue);
     margin-top: 1rem;
@@ -230,7 +230,7 @@ main {
         padding: 1.0625rem 1rem 1rem;
     }
     
-    .summary__details--3 {
+    .summary__details--2 {
         margin-top: 1rem;
     }
 
