@@ -21,6 +21,7 @@ fetch (`${webPageURL}data.json`)
 
             summaryDetail.classList.add("summary__details", `summary__details--${i}`);
             summaryLogo.src = result.icon;
+            summaryLogo.alt = result.iconDescription;
             summaryLogo.classList.add("summary__details__logo");
             summaryDescription.innerText = result.category;
             summaryRatio.classList.add("summary__details__ratio");
