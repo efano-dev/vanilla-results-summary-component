@@ -13,28 +13,48 @@
     </head>
     <body>
         <main>
-            Your Result
-            76
-            of 100
-    
-            Great
-            You scored higher than 65% of the people who have taken these tests.
-            
-            Summary
-    
-            Reaction
-            80 / 100
-    
-            Memory
-            92 / 100
-    
-            Verbal
-            61 / 100
-    
-            Visual
-            72 / 100
-    
-            Continue
+            <article class="result-container">
+                <section class="result">
+                    <h1 class="h-1">Your Result</h1>
+
+                    <div class="result__circle">
+                        <p class="result__circle__antecedent">76</p>
+                        <p class="result__circle__consequent">of 100</p>
+                    </div>
+
+                    <p class="result__status">Great</p>
+                    <p class="result__description">You scored higher than 65% of the people who have taken these tests.</p>
+                </section>
+                <section class="summary">
+                    <h2 class="h-2">Summary</h2>
+
+                    <div class="summary__details summary__details--1">
+                        <img src="./assets/images/icon-reaction.svg" alt="Reaction Logo" class="summary__details__logo">
+                        <p>Reaction</p>
+                        <p class="summary__details__ratio"><span class="summary__details__antecedent">80</span> / 100</p>
+                    </div>
+
+                    <div class="summary__details summary__details--2">
+                        <img src="./assets/images/icon-memory.svg" alt="Memory Logo" class="summary__details__logo">
+                        <p>Memory</p>
+                        <p class="summary__details__ratio"><span class="summary__details__antecedent">92</span> / 100</p>
+                    </div>
+
+                    <div class="summary__details summary__details--3">
+                        <img src="./assets/images/icon-verbal.svg" alt="Verbal Logo" class="summary__details__logo">
+                        <p>Verbal</p>
+                        <p class="summary__details__ratio"><span class="summary__details__antecedent">61</span> / 100</p>
+                    </div>
+
+                    <div class="summary__details summary__details--4">
+                        <img src="./assets/images/icon-visual.svg" alt="Visual Logo" class="summary__details__logo">
+                        <p>Visual</p>
+                        <p class="summary__details__ratio"><span class="summary__details__antecedent">72</span> / 100</p>
+                    </div>
+
+                    <button class="summary__button">Continue</button>
+                </section>
+            </article>
         </main>
         <footer>
             <script src="./scripts/script.js"></script>
