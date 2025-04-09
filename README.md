@@ -1,15 +1,15 @@
 # Frontend Mentor - Results Summary Component Solution
 
-This is a solution to the [Results Summary Component Challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Results Summary Component Challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
 - [My process](#my-process)
-  - [Built with](#built-with)
+    - [Built with](#built-with)
 - [Author](#author)
 
 ## Overview
@@ -26,10 +26,6 @@ Users should be able to:
 
 ![](./assets/images/results-summary-component-screenshot-desktop.png)
 ![](./assets/images/results-summary-component-screenshot-mobile.png)
-
-### Links
-
-- Live Site URL: [Result Summary Component](https://efano-dev.github.io/vanilla-results-summary-component/)
 
 ## My process
 

@@ -1,1 +1,0 @@
-export const webPageURL = "https://efano-dev.github.io/vanilla-results-summary-component/";

@@ -33,7 +33,9 @@
     --fw-bold: 700;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -44,7 +46,9 @@ body {
     font-weight: var(--fw-medium);
 }
 
-h1, h2, p {
+h1,
+h2,
+p {
     margin: 0;
 }
 
@@ -180,7 +184,8 @@ main {
     border-radius: 32px;
 }
 
-.summary__button:hover, .summary__button:focus {
+.summary__button:hover,
+.summary__button:focus {
     background-image: var(--color-gradient-background);
 }
 
@@ -205,7 +210,7 @@ main {
     .h-1 {
         margin-bottom: 2.1875rem;
     }
-    
+
     .result__circle {
         width: 12.5rem;
         height: 12.5rem;
@@ -227,7 +232,7 @@ main {
     .summary__details {
         padding: 1.0625rem 1rem 1rem;
     }
-    
+
     .summary__details--2 {
         margin-top: 1rem;
     }

@@ -1,14 +1,14 @@
-import { webPageURL } from "./global_variables.js";
+import { webPageURL } from "./global_variables.mjs";
 
 const anchorTags = document.getElementsByTagName("a");
 
 [...anchorTags].forEach((anchorTag) => {
     anchorTag.href = webPageURL;
-})
+});
 
-fetch (`${webPageURL}data.json`)
-    .then(rawData => rawData.text())
-    .then(transformedData => {
+fetch(`${webPageURL}data.json`)
+    .then((rawData) => rawData.text())
+    .then((transformedData) => {
         const parsedData = JSON.parse(transformedData);
         const parsedDataLength = parsedData.length;
         const summaryContent = document.getElementById("summaryContent");
@@ -40,9 +40,9 @@ fetch (`${webPageURL}data.json`)
             summaryDetail.appendChild(summaryRatio);
             summaryContent.appendChild(summaryDetail);
         }
-        
+
         const resultCircleAntecedent = document.createElement("p");
-        
+
         resultCircleAntecedent.classList.add("result__circle__antecedent");
         resultCircleAntecedent.innerText = Math.floor(scoreSum / parsedDataLength);
 
