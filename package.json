@@ -1,4 +1,10 @@
 {
+    "scripts": {
+        "check:lint": "eslint .",
+        "check:format": "prettier --check .",
+        "fix:lint": "eslint --fix .",
+        "fix:format": "prettier --write ."
+    },
     "devDependencies": {
         "@eslint/js": "^9.24.0",
         "eslint": "^9.24.0",
